@@ -18,6 +18,18 @@ body {
 #heading1 {
     color: gold;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Zilla Slab', serif;
     font-size: 300%;
+}
+
+.sub-headings {
+    text-align: center;
+    color: gold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+}
+
+.pizzaType {
+    background-color: firebrick;
+    color: floralwhite;   
 }
