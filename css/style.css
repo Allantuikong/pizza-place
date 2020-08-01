@@ -1,0 +1,15 @@
+.intro {
+    background-image: url(../images/pizza1.jpg);
+    background-size: auto;
+    height: 100%;
+    width: fit-content;
+    padding-bottom: 10%;
+    color: white;
+
+
+    
+}
+
+#heading1 {
+    color: gold;
+}
