@@ -44,3 +44,16 @@ body {
     color: floralwhite;
 
 }
+
+.pizzaToppings {
+    background-color: orangered;
+    color: floralwhite;
+
+}
+
+#submit {
+    text-align: center;
+    margin: auto;
+  
+
+}
