@@ -8,10 +8,20 @@ body {
     height: 90%;
     width: fit-content;
     padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-bottom: 2.5%;
     color: white;
     font-size: large;
     text-align: center;
+    
+}
+
+#intro{
+    background-color: #FE8020;
+    color: #FFFFFF;
+    display:inline;
+    white-space:pre-wrap;
+    line-height : 24px;
+    font-size: 18px;
     
 }
 
