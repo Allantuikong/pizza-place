@@ -33,3 +33,14 @@ body {
     background-color: firebrick;
     color: floralwhite;   
 }
+
+.pizzaSize {
+    background-color: saddlebrown;
+    color: floralwhite;   
+}
+
+.pizzaCrust {
+    background-color: seagreen;
+    color: floralwhite;
+
+}
