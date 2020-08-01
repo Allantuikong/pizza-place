@@ -35,6 +35,10 @@
                 <input type="radio" id="pizzaType4" name="pizzaType" class="custom-control-input">
                 <label class="custom-control-label" for="pizzaType4">Indian Veg Feast</label>
               </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput"> Number ordered</label>
+                <input type="number" class="form-control" id="numberOrdered" placeholder="number">
+              </div>
 
         </div>
 
@@ -63,7 +67,7 @@
             <h5 class="sub-headings">How do you like your crust? &#128523 </h5>
               <div class="custom-control custom-radio">
                 <input type="radio" id="pizzaCrust1" name="pizzaCrust" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaCrust1">Delightfully crispy</label>
+                <label class="custom-control-label" for="pizzaCrust1">Delightfully crispy(normal)</label>
               </div>
               <div class="custom-control custom-radio">
                 <input type="radio" id="pizzaCrust2" name="pizzaCrust" class="custom-control-input">
@@ -98,11 +102,35 @@
                 <input type="radio" id="pizzaToppings5" name="pizzaToppings" class="custom-control-input">
                 <label class="custom-control-label" for="pizzaToppings5">Bacon</label>
               </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="pizzaToppings6" name="pizzaToppings" class="custom-control-input">
+                <label class="custom-control-label" for="pizzaToppings6">None</label>
+              </div>
+
 
         </div>
 
         <button id="submit" type="submit" class="btn btn-warning">Place your order!</button>
 
+    </div>
+
+
+
+    <div class="row summaryPic">
+        <div class="col-md-6 checkout">
+            <ul id="order-summary">
+                <h5 id="summaryHeading">Order Summary </h5>
+                
+
+            </ul>
+
+
+        </div>
+
+        <div class="col-md-6 grandSummary">
+
+
+        </div>
     </div>
 </div>
 
