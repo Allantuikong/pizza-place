@@ -2,11 +2,11 @@
 
 ## Project Description
 
-This is a landing page for a fictional studio called *Delani Studio*. A Description of the main services offered by the studio are available and well elaborated. A portfolio section is also included with previsously done work for user's perusal. There is also a feedback section where users can send messages to the admins of delani Studio.
+This is an online ordering platform for *Pizza Deluxe*, a new entrant to the fast-food industry in Kenya. Customers can order pizza on the go, with specifications on the sizes, crust types and even toppings if desired. It brings the shop experience to the customer right at the palm of their hands. Delivery is possible upon request by the customers.
 
 ## Inspiration
 
-Marketing has gone digital and this is a sure way to reach out to potential clients as well as obtain valuable feedback and resolve any customer care concerns.
+Marketing has gone digital and this is a sure way to reach out to potential clients and increase potential sales.
 
 ## Setup Instruction
 
@@ -14,11 +14,9 @@ Set to run on all browsers supporting JavaScript.
 
 ## BDD
 
-- When user's click on icons provided, the user should get elaboration of what the icon intended to convey
+- When the user checks the pizza type they want, they can go on to select the crust, toppings, pizza size and place their desired order.
 
-- When user hovers over the portfolio page, a detail of the name of the project pops up.
-
-- When a user inputs their name and sends message, the message is delivered to Delani admins through Formspree.
+- When the user inputs their order, a summary of their purchases is displayed including total cost incurred for the purchase.
 
 ## Technologies Used
 
@@ -28,11 +26,9 @@ Set to run on all browsers supporting JavaScript.
 
 - Google fonts pack
 
-- Formspree embedded
-
 ## Known Bugs
 
-- Formspree server may be slow at times; be patient.
+- No known bugs at the moment.
 
 ## Contact Information
 
@@ -42,7 +38,7 @@ Phone Number: _+254708785737_
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/Allantuikong/delani-studio/master/LICENSE)
+[MIT](https://raw.githubusercontent.com/Allantuikong/pizza-place/master/LICENSE)
 
 ## Link to deployed site
 
