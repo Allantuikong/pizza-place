@@ -20,103 +20,107 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row pizza-order">
-        <div class="col-md-3 pizzaType" >
-            <h5 class="sub-headings">Choose your delight! </h5>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaType1" name="pizzaType" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaType1">Meat Deluxe</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaType2" name="pizzaType" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaType2">Peri peri Chicken</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaType3" name="pizzaType" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaType3">Chicken BBQ</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaType4" name="pizzaType" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaType4">Indian Veg Feast</label>
-              </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput"> Number ordered</label>
-                <input type="number" class="form-control" id="numberOrdered" placeholder="number">
-              </div>
-
+    <form id="orderPizza">
+        <div class="row pizza-order">
+            <div class="col-md-3 pizzaType" >
+                <h5 class="sub-headings">Choose your delight! </h5>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaType1" name="pizzaType" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaType1">Meat Deluxe</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaType2" name="pizzaType" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaType2">Peri peri Chicken</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaType3" name="pizzaType" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaType3">Chicken BBQ</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaType4" name="pizzaType" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaType4">Indian Veg Feast</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput"> Number ordered</label>
+                    <input type="number" class="form-control" id="numberOrdered" placeholder="number">
+                  </div>
+    
+            </div>
+    
+            <div class="col-md-3 pizzaSize" >
+                <h5 class="sub-headings">Preferred size ? </h5>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaSize1" name="pizzaSize" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaSize1">Kapyenga (Small)</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaSize2" name="pizzaSize" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaSize2">Medium</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaSize3" name="pizzaSize" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaSize3">Large</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaSize4" name="pizzaSize" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaSize4">Uzito (x-large)</label>
+                  </div>
+     
+            </div>
+    
+            <div class="col-md-3 pizzaCrust">
+                <h5 class="sub-headings">How do you like your crust? &#128523 </h5>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaCrust1" name="pizzaCrust" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaCrust1">Delightfully crispy(normal)</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaCrust2" name="pizzaCrust" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaCrust2">Heavily stuffed(Muchies time!!)</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaCrust3" name="pizzaCrust" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaCrust3">Glutten free (Health freaks)</label>
+                  </div>
+    
+            </div>
+    
+            <div class="col-md-3 pizzaToppings">
+                <h5 class="sub-headings">Toppings? Anyone? &#128524 </h5>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaToppings1" name="pizzaToppings" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaToppings1">Pepperoni</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaToppings2" name="pizzaToppings" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaToppings2">Extra cheese</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaToppings3" name="pizzaToppings" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaToppings3">Sausage</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaToppings4" name="pizzaToppings" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaToppings4">Pineapple</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaToppings5" name="pizzaToppings5" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaToppings5">Bacon</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="pizzaToppings6" name="pizzaToppings6" class="custom-control-input">
+                    <label class="custom-control-label" for="pizzaToppings6">None</label>
+                  </div>
+    
+    
+            </div>
+    
+            <button id="submit" type="submit" class="btn btn-warning">Place your order!</button>
+    
         </div>
 
-        <div class="col-md-3 pizzaSize" >
-            <h5 class="sub-headings">Preferred size ? </h5>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaSize1" name="pizzaSize" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaSize1">Kapyenga (Small)</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaSize2" name="pizzaSize" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaSize2">Medium</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaSize3" name="pizzaSize" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaSize3">Large</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaSize4" name="pizzaSize" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaSize4">Uzito (x-large)</label>
-              </div>
- 
-        </div>
+    </form>
 
-        <div class="col-md-3 pizzaCrust">
-            <h5 class="sub-headings">How do you like your crust? &#128523 </h5>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaCrust1" name="pizzaCrust" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaCrust1">Delightfully crispy(normal)</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaCrust2" name="pizzaCrust" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaCrust2">Heavily stuffed(Muchies time!!)</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaCrust3" name="pizzaCrust" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaCrust3">Glutten free (Health freaks)</label>
-              </div>
-
-        </div>
-
-        <div class="col-md-3 pizzaToppings">
-            <h5 class="sub-headings">Toppings? Anyone? &#128524 </h5>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaToppings1" name="pizzaToppings" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaToppings1">Pepperoni</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaToppings2" name="pizzaToppings" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaToppings2">Extra cheese</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaToppings3" name="pizzaToppings" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaToppings3">Sausage</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaToppings4" name="pizzaToppings" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaToppings4">Pineapple</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaToppings5" name="pizzaToppings" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaToppings5">Bacon</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="pizzaToppings6" name="pizzaToppings" class="custom-control-input">
-                <label class="custom-control-label" for="pizzaToppings6">None</label>
-              </div>
-
-
-        </div>
-
-        <button id="submit" type="submit" class="btn btn-warning">Place your order!</button>
-
-    </div>
 
 
 
