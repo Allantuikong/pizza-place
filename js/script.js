@@ -12,33 +12,13 @@ $(document).ready(function() {
     $("#orderPizza").submit(function(event){
         event.preventDefault()
         
-          function type() {
-            let pizzaType = document.getElementById("pizza_type").value;
-            return parseInt(pizzaType);
-          }
-          function size() {
-            let pizzaSize = document.getElementById("pizza_size").value;
-            return parseInt(pizzaSize);
-          }
-          function crust() {
-            let pizzaCrust = document.getElementById("pizza_crust").value;
-            return parseInt(pizzaCrust);
-          }
-          function toppings() {
-            let pizzaToppings = document.getElementById("pizza_toppings").value;
-            return parseInt(pizzaToppings);
-          }
-          function number() {
-            let pizzaNumber = document.getElementById("quantity").value;
-             return parseInt(pizzaNumber);
-          }
 
         let userInput = new Pizza (type(), size(), crust(), toppings(), number())
     
         let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newQuantity
 
     
-        $("#order-summary").html("Your charges for the pizza is Ksh. " + " " +  totalCost + "Hope you enjoy this meal!");
+        $("#order-summary").html("Your charges for the pizza is Ksh. " + " " +  totalCost + " " + "Hope you enjoy this meal!");
 
         $("input#pizza_size").val("")
         $("input#pizza_crust").val("")
