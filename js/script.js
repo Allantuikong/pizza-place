@@ -1,16 +1,52 @@
 class Pizza {
     constructor(type, size, crust, toppings) {
-        this.pizzaType = type
-        this.pizzaSize = size
-        this.pizzaCrust = crust
-        this.pizzaToppings = toppings
+        this.type = type
+        this.size = size
+        this.crustrust = crust
+        this.toppings = toppings
     }
     fullOrder() {
         return this.pizzaType + "," + this.pizzaSize + "," + this.pizzaCrust + "," + this.pizzaToppings 
     }
+
+    calculateCost() {
+  
+
+        if (this.size === 'Kapyenga (Small) ') {
+            this.cost += 500;
+        } else if (this.size === 'Medium') {
+            this.cost += 700;
+        } else if (this.size === 'Large') {
+            this.cost += 1000;
+        } else if (this.size === 'Uzito (x-large)') {
+            this.cost += 1200;
+        }
+    
+        if (this.crust === 'Delightfully crispy(normal)') {
+            this.cost += 0;
+        } else if (this.crust === 'Heavily stuffed(Muchies time!!)') {
+            this.cost += 100;
+        } else if (this.crust === 'Glutten free (Health freaks)') {
+            this.cost += 150;
+        }
+    
+        this.topping.forEach(topping => {
+            this.cost += 100;
+        });
+        return this.cost;
+    }
 }
 
 
+
+
+class Order {
+    constructor(crust, size, topping) {
+        this.crust = crust;
+        this.size = size;
+        this.topping = topping;
+        this.cost = 0;
+    }
 
 // //pizza types
 // let pizzaType1 = {
@@ -92,11 +128,11 @@ $(document).ready(function(){
     $("#orderPizza").submit(function(event) {
         event.preventDefault();
 
-        let inputtedPizzaType = $('input[name=pizzaType]:checked', '#orderPizza').parent().text()
-        let inputtedPizzaSize = $('input[name=pizzaSize]:checked', '#orderPizza').parent().text()
-        let inputtedpizzaCrust = $('input[name=pizzaCrust]:checked', '#orderPizza').parent().text()
-        let inputtedpizzaToppings = $('input[name=pizzaToppings]:checked', '#orderPizza').parent().text()
-        let newPizza = new Pizza(inputtedPizzaType,inputtedPizzaSize,inputtedpizzaCrust,inputtedpizzaToppings)
+        let inputtedtype = $('input[name=pizzaType]:checked', '#orderPizza').parent().text()
+        let inputtedsize = $('input[name=pizzaSize]:checked', '#orderPizza').parent().text()
+        let inputtedcrust = $('input[name=pizzaCrust]:checked', '#orderPizza').parent().text()
+        let inputtedtoppings = $('input[name=pizzaToppings]:checked', '#orderPizza').parent().text()
+        let newPizza = new Pizza(inputtedtype,inputtedsize,inputtedcrust,inputtedtoppings)
 
         $("ul#order-summary").append("<li><span class='pizzaOrder'>" + newPizza.fullOrder() + "</span> </li>")
 
@@ -128,15 +164,13 @@ $(document).ready(function(){
     
 
         
-        $("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
+        $("#remoteThankYou").html("Thank you " + remoteClientName + " for odering with us! Your order will be delivered to your location in " + remoteClientAddress + ".");
     
         resetFields()
     
     
     })
 
-   
 
 })
-
 
