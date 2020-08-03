@@ -20,110 +20,75 @@
 </div>
 
 <div class="container-fluid">
-    <form id="orderPizza">
+    
         <div class="row pizza-order">
             <div class="col-md-3 pizzaType" >
                 <h5 class="sub-headings">Choose your delight! </h5>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaType1" name="pizzaType" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaType1">Meat Deluxe</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaType2" name="pizzaType" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaType2">Peri peri Chicken</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaType3" name="pizzaType" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaType3">Chicken BBQ</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaType4" name="pizzaType" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaType4">Indian Veg Feast</label>
-                  </div>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput"> Number ordered</label>
-                    <input type="number" class="form-control" id="numberOrdered" placeholder="number">
-                  </div>
+                <form id="orderPizza">
+                  <label for="pizza_type">&#127829
+                    <select class="pizza_type" id="pizza_type" required>
+                        <option value="1">Meat Deluxe</option>
+                        <option value="1">Peri peri chicken</option>
+                        <option value="1">Chicken BBQ</option>
+                        <option value="1">Indian Veg Feast</option>
+                    </select>
+                </label>
+  
+                <div>
+                  <label for="Number of Orders"> Number of Orders</label>
+                  <input value=" " required placeholder="number of pizza" id="quantity" class="form-control"  type="number" min="1" required><br>
+              </div>
+      
+              </div>
+      
+              <div class="col-md-3 pizzaSize" >
+                  <h5 class="sub-headings">Preferred size ? </h5>
+                  <label for="pizza_size">Choose your size:
+                    <select class="pizza_size" id="pizza_size" required>
+                        <option value="500">Kapyenga (Small)</option>
+                        <option value="700">Medium</option>
+                        <option value="1000">Large</option>
+                        <option value="1200">Uzito (x-large)</option>
+                    </select>
+                </label>
+       
+              </div>
+      
+              <div class="col-md-3 pizzaCrust">
+                  <h5 class="sub-headings">How do you like your crust? &#128523 </h5>
+                  <label for="pizza_crust">How do you like your crust?:
+                    <select class="pizza_crust" id="pizza_crust" required>
+                        <option value="50">Delightfully crispy(normal)</option>
+                        <option value="150">Stuffed (Munchies)</option>
+                        <option value="150">Glutten free (Healthy)@Ksh.150/-</option>
+                    </select>
+                </label>     
+      
+              </div>
+  
+              <div class="col-md-3 pizzaToppings">
+                  <h5 class="sub-headings">Toppings? Anyone? &#128524 </h5>
+                  <label for="pizza_toppings">Toppings? Anyone? &#128524
+                    <select class="pizza_toppings" id="pizza_toppings" required>
+                        <option value="100">No extra toppings</option>
+                        <option value="100">Pepperoni @Ksh.100/-</option>
+                        <option value="100">Extra cheese @Khs.100/-</option>
+                        <option value="100">Sausage @Ksh.100/-</option>
+                        <option value="100">Pineapple @Ksh.100/-</option>
+                        <option value="100">Bacon @Ksh. 100/-</option>
+                    </select>
+                </label>  
+      
+              </div>
     
-            </div>
-    
-            <div class="col-md-3 pizzaSize" >
-                <h5 class="sub-headings">Preferred size ? </h5>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaSize1" name="pizzaSize" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaSize1">Kapyenga (Small) @Ksh. 500/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaSize2" name="pizzaSize" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaSize2">Medium @Ksh.700/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaSize3" name="pizzaSize" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaSize3">Large @Ks. 1000/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaSize4" name="pizzaSize" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaSize4">Uzito (x-large) @Ksh. 1200/-</label>
-                  </div>
-     
-            </div>
-    
-            <div class="col-md-3 pizzaCrust">
-                <h5 class="sub-headings">How do you like your crust? &#128523 </h5>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaCrust1" name="pizzaCrust" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaCrust1">Delightfully crispy(normal)</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaCrust2" name="pizzaCrust" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaCrust2">Heavily stuffed(Muchies time!!) @Ksh.100/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaCrust3" name="pizzaCrust" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaCrust3">Glutten free (Health freaks) @ Ksh.150/-</label>
-                  </div>
-    
-            </div>
-    
-            <div class="col-md-3 pizzaToppings">
-                <h5 class="sub-headings">Toppings? Anyone? &#128524 </h5>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaToppings1" name="pizzaToppings" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaToppings1">Pepperoni @Ksh.100/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaToppings2" name="pizzaToppings" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaToppings2">Extra cheese @Khs.100/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaToppings3" name="pizzaToppings" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaToppings3">Sausage @Ksh.100/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaToppings4" name="pizzaToppings" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaToppings4">Pineapple @Ksh.100/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaToppings5" name="pizzaToppings5" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaToppings5">Bacon @Ksh. 100/-</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="pizzaToppings6" name="pizzaToppings6" class="custom-control-input">
-                    <label class="custom-control-label" for="pizzaToppings6">None</label>
-                  </div>
-    
-    
-            </div>
-    
-            <button id="submit" type="submit" class="btn btn-warning">Place your order!</button>
-    
-        </div>
+      
+          </div>
+          <button id="btn" type="submit" class="btn btn-warning">Place your order!</button>
 
-    </form>
+                </form>
+                
 
-
-
-
+  
     <div class="row summaryPic">
         <div class="col-md-6 checkout">
             <ul id="order-summary">
@@ -161,15 +126,6 @@
     
 </div>
 
-
-
-
-
-
-
-
-
-    
 
 </body>
 </html>

@@ -41,7 +41,7 @@ body {
 
 .pizzaType {
     background-color: firebrick;
-    color: floralwhite;   
+    color: floralwhite; 
 }
 
 .pizzaSize {
@@ -119,6 +119,14 @@ body {
 
 .pizzaOrder {
     color: maroon;
+    font-family: 'Lobster', cursive;
+    font-size: 120%;
+    padding-top: 2%;
+
+}
+
+.pizzaCost {
+    color: black;
     font-family: 'Lobster', cursive;
     font-size: 120%;
     padding-top: 2%;
