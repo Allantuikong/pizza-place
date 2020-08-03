@@ -83,7 +83,8 @@ body {
 }
 
 .summaryPic {
-    background-image: url(../images/pizza2.jpg) ;
+    background-image: url() ;
+    background-color: lightsteelblue;
     background-size: auto;
     height: 90%;
     width: fit-content;
@@ -91,10 +92,12 @@ body {
     padding-bottom: 5%;
     color: white;
     font-size: large;
-    text-align: center;
+    
 
 }
 
 .buttonRow {
     background-color: paleturquoise;
 }
+
+

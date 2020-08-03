@@ -128,7 +128,7 @@
         <div class="col-md-6 checkout">
             <ul id="order-summary">
                 <h5 id="summaryHeading">Order Summary </h5>
-                
+               
 
             </ul>
 
@@ -136,6 +136,20 @@
         </div>
 
         <div class="col-md-6 grandSummary">
+            <div class="pizzaDeliveryForm">
+                <form id="deliveryPointForm">
+                    <label for="Delivery-Point">Select Delivery Point</label>
+                    <select id="deliveryPoint" class="form-control" required>
+                  <option value="">Select Delivery Point</option>
+                  <option value="1">Deliver to specified location</option>
+
+                  <option value="2">Pick up on order</option>
+                  </select>
+                    <div class="confirm">
+                        <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
+                    </div>
+                </form>
+
 
 
         </div>

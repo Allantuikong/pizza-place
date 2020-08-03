@@ -5,7 +5,12 @@ class Pizza {
         this.pizzaCrust = crust
         this.pizzaToppings = toppings
     }
+    fullOrder() {
+        return this.pizzaType + "," + this.pizzaSize + "," + this.pizzaCrust + "," + this.pizzaToppings 
+    }
 }
+
+
 
 // //pizza types
 // let pizzaType1 = {
@@ -92,11 +97,25 @@ $(document).ready(function(){
         let inputtedpizzaCrust = $('input[name=pizzaCrust]:checked', '#orderPizza').parent().text()
         let inputtedpizzaToppings = $('input[name=pizzaToppings]:checked', '#orderPizza').parent().text()
         let newPizza = new Pizza(inputtedPizzaType,inputtedPizzaSize,inputtedpizzaCrust,inputtedpizzaToppings)
+
+        $("ul#order-summary").append("<li><span class='contact'>" + newPizza.fullOrder() + "</span> </li>")
+
+ 
         
-        console.log (newPizza)
+      
 
     })
 })
 
- 
+$("#deliveryPointForm").submit(function(event) {
+    event.preventDefault();
+
+    deliveryPoint = $("#deliveryPoint").val();
+    if (deliveryPoint == 1) {
+        $("#remoteLocation").show();
+
+    };
+
+});
+
 
