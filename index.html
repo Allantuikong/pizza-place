@@ -138,14 +138,12 @@
         <div class="col-md-6 grandSummary">
             <div class="pizzaDeliveryForm">
                 <form id="deliveryPointForm">
-                    <label for="Delivery-Point">Select Delivery Point</label>
+                    <label id="deliveryForm"for="Delivery-Point">Select Delivery Point</label>
                     <select id="deliveryPoint" class="form-control" required>
                   <option value="1">Deliver to specified location</option>
-
-                  <option value="2">Pick up on order</option>
                   </select>
                     <div class="confirm">
-                        <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
+                        <button class="btn btn-success" type="submit" value="Confirm">Confirm</button>
                     </div>
                 </form>
 
@@ -153,7 +151,7 @@
                     <form id="submitLocaton">
                         <input id="userName" class="form-control" type="text" name="name" placeholder="Name" required><br>
                         <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address" required><br>
-                        <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                        <button class="btn btn-success" type="submit" value="submit">Submit</button>
                     </form>
                     <div id="remoteThankYou"></div>
                 </div>

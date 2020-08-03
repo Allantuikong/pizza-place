@@ -76,10 +76,9 @@ body {
 }
 
 #summaryHeading {
+    color: maroon;
     font-family: 'Zilla Slab', serif;
-    color: red;
-    text-align: center;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .summaryPic {
@@ -104,4 +103,24 @@ body {
     display: none;
 }
 
+#deliveryForm {
+    color: maroon;
+    font-family: 'Zilla Slab', serif;
+    font-size: 150%;
+}
 
+#remoteThankYou {
+    color: gold;
+    font-family: 'Lobster', cursive;
+    font-size: 120%;
+    padding-top: 2%;
+
+}
+
+.pizzaOrder {
+    color: gold;
+    font-family: 'Lobster', cursive;
+    font-size: 120%;
+    padding-top: 2%;
+
+}

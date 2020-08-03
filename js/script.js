@@ -98,33 +98,44 @@ $(document).ready(function(){
         let inputtedpizzaToppings = $('input[name=pizzaToppings]:checked', '#orderPizza').parent().text()
         let newPizza = new Pizza(inputtedPizzaType,inputtedPizzaSize,inputtedpizzaCrust,inputtedpizzaToppings)
 
-        $("ul#order-summary").append("<li><span class='contact'>" + newPizza.fullOrder() + "</span> </li>")
+        $("ul#order-summary").append("<li><span class='pizzaOrder'>" + newPizza.fullOrder() + "</span> </li>")
 
       
     })
 
     $("#deliveryPointForm").submit(function(event) {
         event.preventDefault();
-    
+
         deliveryPoint = $("#deliveryPoint").val();
         if (deliveryPoint == 1) {
             $("#remoteLocation").show();
-    
+
         }
-    
+
     })
+
+    function resetFields(){
+        $("input#userName").val("")
+        $("input#userAddress").val("")
+    
+      }
+
     
     $("#submitLocaton").submit(function(event) {
         event.preventDefault();
-        var remoteClientName = $("#userName").val();
-        var remoteClientAddress = $("#userAddress").val();
-        
+        var remoteClientName = $("#userName").val()
+        var remoteClientAddress = $("#userAddress").val()
     
+
+        
         $("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
+    
+        resetFields()
+    
     
     })
 
-
+   
 
 })
 
