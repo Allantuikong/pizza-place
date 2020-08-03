@@ -100,22 +100,32 @@ $(document).ready(function(){
 
         $("ul#order-summary").append("<li><span class='contact'>" + newPizza.fullOrder() + "</span> </li>")
 
- 
-        
       
-
     })
+
+    $("#deliveryPointForm").submit(function(event) {
+        event.preventDefault();
+    
+        deliveryPoint = $("#deliveryPoint").val();
+        if (deliveryPoint == 1) {
+            $("#remoteLocation").show();
+    
+        }
+    
+    })
+    
+    $("#submitLocaton").submit(function(event) {
+        event.preventDefault();
+        var remoteClientName = $("#userName").val();
+        var remoteClientAddress = $("#userAddress").val();
+        
+    
+        $("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
+    
+    })
+
+
+
 })
-
-$("#deliveryPointForm").submit(function(event) {
-    event.preventDefault();
-
-    deliveryPoint = $("#deliveryPoint").val();
-    if (deliveryPoint == 1) {
-        $("#remoteLocation").show();
-
-    };
-
-});
 
 

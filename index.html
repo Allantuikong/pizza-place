@@ -140,7 +140,6 @@
                 <form id="deliveryPointForm">
                     <label for="Delivery-Point">Select Delivery Point</label>
                     <select id="deliveryPoint" class="form-control" required>
-                  <option value="">Select Delivery Point</option>
                   <option value="1">Deliver to specified location</option>
 
                   <option value="2">Pick up on order</option>
@@ -149,6 +148,17 @@
                         <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
                     </div>
                 </form>
+
+                <div id="remoteLocation">
+                    <form id="submitLocaton">
+                        <input id="userName" class="form-control" type="text" name="name" placeholder="Name" required><br>
+                        <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address" required><br>
+                        <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                    </form>
+                    <div id="remoteThankYou"></div>
+                </div>
+                
+        
 
 
 
