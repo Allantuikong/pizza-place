@@ -144,9 +144,10 @@ body {
     color: black;
 }
 
-#selected-pizza {
+#selected-type, #selected-crust, #selectedSize, #selectedToppings {
     color: black
 }
+
 @media screen and (max-width: 1024px) {
     #intro {
         width: 100%;

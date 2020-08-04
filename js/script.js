@@ -52,10 +52,10 @@ $(document).ready(function() {
     
      
        
-        $("#selected-pizza").html(selectedSize)
-        $("#selected-pizza").html(selectedCrust)
-        $("#selected-pizza").html(selectedToppings)
-        $("#selected-pizza").html(selectedType)
+        $("#selected-type").html(selectedSize)
+        $("#selected-size").html(selectedCrust)
+        $("#selected-crust").html(selectedToppings)
+        $("#selected-toppings").html(selectedType)
 
 
     
