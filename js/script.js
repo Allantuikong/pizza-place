@@ -18,22 +18,22 @@ $(document).ready(function() {
         
             function type() {
                 let pizzaType = document.getElementById("pizza_type").value
-                return parseInt(pizzaType);
+                return parseInt(pizzaType)
             }
 
             function size() {
                 let pizzaSize = document.getElementById("pizza_size").value
-                return parseInt(pizzaSize);
+                return parseInt(pizzaSize)
             }
 
             function crust() {
                 let pizzaCrust = document.getElementById("pizza_crust").value
-                return parseInt(pizzaCrust);
+                return parseInt(pizzaCrust)
             }
 
             function toppings() {
                 let pizzaToppings = document.getElementById("pizza_toppings").value
-                return parseInt(pizzaToppings);
+                return parseInt(pizzaToppings)
             }
             
             function number() {
@@ -41,16 +41,16 @@ $(document).ready(function() {
                 return parseInt(pizzaNumber);
             }
 
-            let selectedSize= $( "#pizza_size option:selected" ).text()
-            let selectedType = $( "#pizza_type option:selected" ).text()
-            let selectedCrust = $( "#pizza_crust option:selected" ).text()
-            let selectedToppings= $( "#pizza_toppings option:selected" ).text()
-    
+
         let userInput = new Pizza (type(), size(), crust(), toppings(), number() );
 
-        let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newQuantity
+        let totalcost = (userInput.newType + userInput.newSize + userInput.newCrust ) * userInput.newQuantity
     
-     
+        let selectedSize= $( "#pizza_size option:selected" ).text()
+        let selectedType = $( "#pizza_type option:selected" ).text()
+        let selectedCrust = $( "#pizza_crust option:selected" ).text()
+        let selectedToppings= $( "#pizza_toppings option:selected" ).text()
+
        
         $("#selected-type").html(selectedSize)
         $("#selected-size").html(selectedCrust)
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 
     
-        $("#order-summary").html("Thank you  for ordering with us! " + "your total cost is Ksh." + "" + totalCost  );
+        $("#order-summary").html("Thank you  for ordering with us! " + "your total cost is Ksh." + "" + totalcost  );
         
        
      
