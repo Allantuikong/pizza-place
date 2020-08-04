@@ -59,7 +59,6 @@ $(document).ready(function() {
        }
 
 
-
         $("#order-summary").html("Thank you  for ordering with us! " + "your total cost is Ksh." + "" + totalCost  );
         $("#selected-pizza").html (fullorder())
        

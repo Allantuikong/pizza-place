@@ -146,10 +146,11 @@ body {
 
 #selected-pizza {
     color: black
-
+}
 @media screen and (max-width: 1024px) {
-    .intro {
+    #intro {
         width: 100%;
+    
     }
    
     .pizzaType, .pizzaSize , .pizzaCrust {
