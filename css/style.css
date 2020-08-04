@@ -133,17 +133,22 @@ body {
 
 }
 
-@media screen and (min-width: 1024px) and (max-height: 1310px) {
-    .summaryPic {
+@media screen and (max-width: 1024px) {
+    .intro {
         width: 100%;
-    
     }
-    body {
-       width:100%
+   
+    .pizzaType, .pizzaSize , .pizzaCrust {
+        width: 100%;
+        display: block;
     }
-
-    
-
-
-    /* Laptop */
+   
+    #deliveryForm {
+        width: 100%;
+        display: block;
+    }
+    #order-summary {
+        width: 100%;
+        display: block;
+    }
 }
