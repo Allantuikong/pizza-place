@@ -12,6 +12,8 @@ class Pizza {
 $(document).ready(function() {
     $("#order_Pizza").submit(function(event){
         event.preventDefault()
+
+        $(this).find('option:selected').attr("name")
         
         
             function type() {
@@ -39,16 +41,29 @@ $(document).ready(function() {
                 return parseInt(pizzaNumber);
             }
 
-
+            let selectedSize= $( "#pizza_size option:selected" ).text()
+            let selectedType = $( "#pizza_type option:selected" ).text()
+            let selectedCrust = $( "#pizza_crust option:selected" ).text()
+            let selectedToppings= $( "#pizza_toppings option:selected" ).text()
     
         let userInput = new Pizza (type(), size(), crust(), toppings(), number() );
 
         let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newQuantity
     
      
-       $("#order-summary").html("Thank you  for ordering with us! " + "your total cost is Ksh." + "" + totalCost  );
+       function fullorder (){
+        $("#selected-pizza").html(selectedSize)
+        $("#selected-pizza").html(selectedCrust)
+        $("#selected-pizza").html(selectedToppings)
+        $("#selected-pizza").html(selectedType)
+       }
 
+
+
+        $("#order-summary").html("Thank you  for ordering with us! " + "your total cost is Ksh." + "" + totalCost  );
+        $("#selected-pizza").html (fullorder())
        
+     
     })
 
     $("#deliveryPointForm").submit(function(event) {
