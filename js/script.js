@@ -40,9 +40,9 @@ $(document).ready(function() {
 
 
     
-        let userInput = new Pizza (type(), size(), crust(), toppings(), number());
+        let userInput = new Pizza (type(), size(), crust(), toppings(), number() );
     
-        let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) *userInput.newQuantity;
+        let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newQuantity;
     
     
        $("#order-summary").html("Thankyou  for ordering with us! " + "your total cost is Ksh." + "" + totalCost  );
