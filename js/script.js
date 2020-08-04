@@ -8,24 +8,43 @@ class Pizza {
     }
 }
     
+
 $(document).ready(function() {
-    $("#orderPizza").submit(function(event){
+    $("#order_Pizza").submit(function(event){
         event.preventDefault()
         
+            function type() {
+                let pizzaType = document.getElementById("pizza_type").value;
+                return parseInt(pizzaType);
+            }
 
-        let userInput = new Pizza (type(), size(), crust(), toppings(), number())
+            function size() {
+                let pizzaSize = document.getElementById("pizza_size").value;
+                return parseInt(pizzaSize);
+            }
+
+            function crust() {
+                let pizzaCrust = document.getElementById("pizza_crust").value;
+                return parseInt(pizzaCrust);
+            }
+
+            function toppings() {
+                let pizzaToppings = document.getElementById("pizza_toppings").value;
+                return parseInt(pizzaToppings);
+            }
+            
+            function number() {
+                let pizzaNumber = document.getElementById("quantity").value;
+                return parseInt(pizzaNumber);
+            }
+
+
     
-        let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newQuantity
-
+        let userInput = new Pizza (type(), size(), crust(), toppings(), number());
     
-        $("#order-summary").html("Your charges for the pizza is Ksh. " + " " +  totalCost + " " + "Hope you enjoy this meal!");
-
-        $("input#pizza_size").val("")
-        $("input#pizza_crust").val("")
-        $("input#pizza_type").val("")
-        $("input#pizza_toppings").val("")
-        $("input#quantity").val ("")
-        $("input#order-summary").val ("")
+        let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) *userInput.newQuantity;
+    
+        alert("Your total cost is Ksh." + " " + totalCost);
     
         
     })
@@ -45,7 +64,6 @@ $(document).ready(function() {
         event.preventDefault();
         var remoteClientName = $("#userName").val();
         var remoteClientAddress = $("#userAddress").val();
-        var remoteClientPhoneNumber = $("#userTelNum").val();
       
         $("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
       
@@ -53,33 +71,7 @@ $(document).ready(function() {
 
 })
  
-    // calculateCost() {
-
-
-    //     if (this.size === 'small') {
-    //         this.cost += 500;
-    //     } else if (this.size === 'medium') {
-    //         this.cost += 700;
-    //     } else if (this.size === 'large') {
-    //         this.cost += 1000;
-    //     } else if (this.size === 'x-large') {
-    //         this.cost += 1200;
-    //     }
-
-    //     if (this.crust === 'crispy') {
-    //         this.cost += 0;
-    //     } else if (this.crust === 'stuffed') {
-    //         this.cost += 100;
-    //     } else if (this.crust === 'glutten') {
-    //         this.cost += 150;
-    //     }
-
-    //     this.toppings.forEach(topping => {
-    //         this.cost += 50;
-    //     });
-
-    //     return this.cost;
-    // }   
+     
     
 
      
