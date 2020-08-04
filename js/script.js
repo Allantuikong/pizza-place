@@ -44,8 +44,8 @@ $(document).ready(function() {
     
         let totalCost = (userInput.newType + userInput.newSize + userInput.newCrust + userInput.newToppings) *userInput.newQuantity;
     
-        alert("Your total cost is Ksh." + " " + totalCost);
     
+       $("#order-summary").html("Thankyou  for ordering with us! " + "your total cost is Ksh." + "" + totalCost  );
         
     })
 
