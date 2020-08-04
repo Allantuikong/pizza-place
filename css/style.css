@@ -135,12 +135,11 @@ body {
 
 @media screen and (min-width: 1024px) and (max-height: 1310px) {
     .summaryPic {
-
-        height: 90%;
-        width: auto;
-
-        
+        width: 100%;
     
+    }
+    body {
+       width:100%
     }
 
     
